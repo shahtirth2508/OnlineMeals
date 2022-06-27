@@ -1,0 +1,237 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px
+}
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.4;
+}
+/*Navigation Bar: Logo and Image */
+
+#logo{
+margin: 3px 10px;
+}
+
+#logo img{
+height: 69px;
+margin: 3px 6px;
+
+}
+
+/* Navigation Bar:List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Arvo', serif;
+}
+
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/happy-thanksgiving-concept-autumn-composition-with-ripe-orange-dry-picture-id1174422535?k=6&m=1174422535&s=612x612&w=0&h=43svBL6JmtDMivl9Ebj1TwSTiqkxkkSWK4XFdh6Y8mU=') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Services Container */
+    
+#services{
+    margin: 74px 5px;
+    display: flex;
+    
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 25px;
+    border-radius: 28px;
+    background: rgb(241, 231, 231);
+    margin-bottom: 20px;
+    
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p{
+    font-family: 'Arvo', serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+    
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 134px;
+}
+.client-item{
+    padding: 34px;
+}
+
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60') no-repeat center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Arvo', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Arvo', serif;
+}
+
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Arvo', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
